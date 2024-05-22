@@ -1,2 +1,3 @@
-# o-riscv
-Only RISC-V resources
+# O-RISC-V
+
+Only RISC-V Resources.
