@@ -1,0 +1,49 @@
+site_name: O-RISC-V. Only RISC-V Resources
+site_url: https://o-riscv.com
+theme:
+  logo: assets/o-riscv.png
+  favicon: assets/o-riscv.png
+  name: material
+  palette:
+    scheme: slate
+    primary: blue grey
+    accent: orange
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+plugins:
+  - search
+  - social
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.tasklist
+extra:
+  analytics:
+    provider: google
+    property: G-KXWH4MD9EY
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: infosec.exchange/@phretor
+    - icon: fontawesome/brands/twitter
+      link: twitter.com/@phretor
+    - icon: fontawesome/brands/github
+      link: github.com/phretor/o-riscv
+    - icon: fontawesome/brands/linkedin
+      link: linkedin.com/in/phretor
+copyright: Copyright &copy; 2024 Federico Maggi & authors of linked resources.
+repo_url: https://github.com/phretor/o-riscv
+nav:
+  - Home: index.md
+  - Tutorials: tutorials/index.md
