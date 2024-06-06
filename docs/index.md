@@ -11,4 +11,4 @@ O-RISC-V is short for "Only RISC-V," a website where I collect RISC-V resources,
 
 ## Disclaimer
 
-The content you'll find on this website is intended for educational purposes only, it may be inaccurate, so take with caution and always double check the source of the content. This is my personal project and by no means reflects the opinion or views of my employer.
+The content you'll find on this website is intended for educational purposes only, it may be inaccurate, so take with caution and always double check the source of the content. This is a personal project and by no means reflects the opinion or views of my employer.

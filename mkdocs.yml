@@ -43,13 +43,13 @@ extra:
     property: G-KXWH4MD9EY
   social:
     - icon: fontawesome/brands/mastodon 
-      link: infosec.exchange/@phretor
+      link: https://infosec.exchange/@phretor
     - icon: fontawesome/brands/twitter
-      link: twitter.com/@phretor
+      link: https://twitter.com/@phretor
     - icon: fontawesome/brands/github
-      link: github.com/phretor/o-riscv
+      link: https://github.com/phretor/o-riscv
     - icon: fontawesome/brands/linkedin
-      link: linkedin.com/in/phretor
+      link: https://linkedin.com/in/phretor
 copyright: Copyright &copy; 2024 Federico Maggi & authors of linked resources.
 repo_url: https://github.com/o-riscv/o-riscv
 extra_javascript:
