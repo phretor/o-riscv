@@ -10,6 +10,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Pandoc
+        uses: pandoc/actions/setup@{main}
+        with:
+          version: 3.2
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
         run: |
