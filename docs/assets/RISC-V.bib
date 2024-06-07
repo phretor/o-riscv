@@ -1,3 +1,16 @@
+@misc{-OpenHWGroup,
+  title = {{{OpenHW Group}}},
+  author = {{-}},
+  journal = {OpenHW Group},
+  urldate = {2024-06-07},
+  abstract = {OpenHW Group is a not-for-profit, global organization driven by its members and individual contributors where hardware and software designers collaborate on {\dots}},
+  howpublished = {https://www.openhwgroup.org/},
+  langid = {english},
+  keywords = {archived},
+  annotation = {https://web.archive.org/web/20240607034220/https://www.openhwgroup.org/},
+  file = {/Users/u/Zotero/storage/MZGBUGFV/www.openhwgroup.org.html}
+}
+
 @misc{aleksanderkrimskyRISCVSingleBoard,
   title = {{{RISC-V Single Board Computers}}},
   author = {{Aleksander Krimsky}},
@@ -51,6 +64,41 @@
   langid = {english}
 }
 
+@misc{BuicsgProcessorFuzz2024,
+  title = {Bu-Icsg/{{ProcessorFuzz}}},
+  year = {2024},
+  month = may,
+  urldate = {2024-06-07},
+  copyright = {Apache-2.0},
+  howpublished = {Integrated Circuits and Systems Group at Boston University},
+  keywords = {archived}
+}
+
+@inproceedings{canakciProcessorFuzzProcessorFuzzing2023,
+  title = {{{ProcessorFuzz}}: {{Processor Fuzzing}} with {{Control}} and {{Status Registers Guidance}}},
+  shorttitle = {{{ProcessorFuzz}}},
+  booktitle = {2023 {{IEEE International Symposium}} on {{Hardware Oriented Security}} and {{Trust}} ({{HOST}})},
+  author = {Canakci, Sadullah and Rajapaksha, Chathura and Delshadtehrani, Leila and Nataraja, Anoop and Taylor, Michael Bedford and Egele, Manuel and Joshi, Ajay},
+  year = {2023},
+  month = may,
+  pages = {1--12},
+  issn = {2765-8406; https://web.archive.org/web/20240607034727/https://ieeexplore.ieee.org/document/10133714},
+  doi = {10.1109/HOST55118.2023.10133714},
+  urldate = {2024-06-07},
+  abstract = {As the complexity of modern processors has increased over the years, developing effective verification strategies to identify bugs prior to manufacturing has become critical. Inspired by software fuzzing, a technique commonly used for software testing, multiple recent works use hardware fuzzing for the verification of Register-Transfer Level (RTL) designs. However, these works suffer from several limitations such as lack of support for widelyused Hardware Description Languages (HDLs) and misleading coverage-signals that misidentify ``interesting'' inputs. Towards overcoming these shortcomings, we present ProcessorFuzz, a processor fuzzer that guides the fuzzer with a novel CSR-transition coverage metric. ProcessorFuzz monitors the transitions in Control and Status Registers (CSRs) as CSRs are in charge of controlling and holding the state of the processor. Therefore, transitions in CSRs indicate a new processor state, and guiding the fuzzer based on this feedback enables ProcessorFuzz to explore new processor states. We evaluated ProcessorFuzz with three real-world opensource processors --- Rocket, BOOM, and BlackParrot. ProcessorFuzz triggered a set of ground-truth bugs 1.23 {\textbackslash}times faster (on average) than DIFUZZRTL. Moreover, our experiments exposed 8 new bugs across the three RISC-V cores and one new bug in a reference model. All nine bugs were confirmed by the developers of the corresponding projects.},
+  keywords = {archived},
+  file = {/Users/u/Zotero/storage/3Z2UBWKG/Canakci et al. - 2023 - ProcessorFuzz Processor Fuzzing with Control and .pdf}
+}
+
+@misc{cascade-artifacts-designsCascadeartifactsdesignsCascademeta2024,
+  title = {Cascade-Artifacts-Designs/Cascade-Meta},
+  author = {{cascade-artifacts-designs}},
+  year = {2024},
+  month = may,
+  urldate = {2024-06-07},
+  keywords = {archived}
+}
+
 @misc{CascadeCPUFuzzing,
   title = {Cascade: {{CPU Fuzzing}} via {{Intricate Program Generation}}},
   shorttitle = {Cascade},
@@ -59,6 +107,26 @@
   abstract = {TL;DR Cascade is a RISC-V CPU fuzzer that generates valid, long and complex programs, and relies on a termination cascade-effect for bug detection. It detected 37 new bugs (29 new CVEs) in 5 RISC-V CPUs, which is more than all the existing fuzzers, combined. You can read a paper we wrote on Cascade here and{\dots} Read},
   langid = {american},
   file = {/Users/u/Zotero/storage/9R4IX9RF/cascade-cpu-fuzzing-via-intricate-program-generation.html}
+}
+
+@inproceedings{chenHyPFuzzFormalAssistedProcessor2023,
+  title = {{{HyPFuzz}}: {{Formal-Assisted Processor Fuzzing}}},
+  booktitle = {{{USENIX Security}} 2023},
+  author = {Chen, Chen and Kande, Rahul and Nguyen, Nathan and Andersen, Flemming and Tyagi, Aakash and Sadeghi, Ahmad-Reza and Rajendran, Jeyavijayan},
+  year = {2023},
+  abstract = {Recent research has shown that hardware fuzzers can effectively detect security vulnerabilities in modern processors. However, existing hardware fuzzers do not fuzz well the hardto-reach design spaces. Consequently, these fuzzers cannot effectively fuzz security-critical control- and data-flow logic in the processors, hence missing security vulnerabilities.},
+  langid = {english},
+  file = {/Users/u/Zotero/storage/K56RQJNX/Chen et al. - HyPFuzz Formal-Assisted Processor Fuzzing.pdf}
+}
+
+@misc{CompsecsnuDifuzzrtl2024,
+  title = {Compsec-Snu/Difuzz-Rtl},
+  year = {2024},
+  month = apr,
+  urldate = {2024-06-07},
+  copyright = {BSD-3-Clause},
+  howpublished = {Systems and Software Security Lab at Seoul National University (SNU)},
+  keywords = {archived}
 }
 
 @misc{DARPATakesRISCV2019,
@@ -156,15 +224,6 @@
   file = {/Users/u/Zotero/storage/NA95UKZG/playlist.html}
 }
 
-@misc{GitHubUzLITSMAMBOV,
-  title = {{{GitHub}} - {{UzL-ITS}}/{{MAMBO-V}}: {{MAMBO-V}}: {{Dynamic Side-Channel Leakage Analysis}} on {{RISC-V}}},
-  urldate = {2024-04-06},
-  howpublished = {https://github.com/UzL-ITS/MAMBO-V},
-  keywords = {archived},
-  annotation = {https://web.archive.org/web/20240406051845/https://github.com/UzL-ITS/MAMBO-V},
-  file = {/Users/u/Zotero/storage/PAGWTGQG/MAMBO-V.html}
-}
-
 @misc{goldmanHowSecureAre2023,
   title = {How {{Secure Are RISC-V Chips}}?},
   author = {Goldman, Jeff},
@@ -177,6 +236,16 @@
   langid = {american},
   keywords = {archived},
   annotation = {https://web.archive.org/web/20240406053651/https://semiengineering.com/how-secure-are-risc-v-chips/}
+}
+
+@misc{GoogleinternsHwfuzzing2024a,
+  title = {Googleinterns/Hw-Fuzzing},
+  year = {2024},
+  month = jun,
+  urldate = {2024-06-07},
+  copyright = {Apache-2.0},
+  howpublished = {Google Interns},
+  keywords = {archived}
 }
 
 @misc{grehackGreHack2022Reverse2022,
@@ -213,6 +282,24 @@
   file = {/Users/u/Zotero/storage/YRKZBZK4/RISC-V-Security-Multizone-v-TrustZone-April-19.pdf}
 }
 
+@inproceedings{hurDifuzzRTLDifferentialFuzz2021,
+  title = {{{DifuzzRTL}}: {{Differential Fuzz Testing}} to {{Find CPU Bugs}}},
+  shorttitle = {{{DifuzzRTL}}},
+  booktitle = {{{IEEE Symposium}} on {{Security}} and {{Privacy}} ({{SP}})},
+  author = {Hur, Jaewon and Song, Suhwan and Kwon, Dongup and Baek, Eunjin and Kim, Jangwoo and Lee, Byoungyoung},
+  year = {2021},
+  pages = {1286--1303},
+  publisher = {IEEE Computer Society},
+  doi = {10.1109/SP40001.2021.00103},
+  urldate = {2024-06-07},
+  abstract = {Security bugs in CPUs have critical security impacts to all the computation related hardware and software components as it is the core of the computation. In spite of the fact that architecture and security communities have explored a vast number of static or dynamic analysis techniques to automatically identify such bugs, the problem remains unsolved and challenging largely due to the complex nature of CPU RTL designs.This paper proposes DIFUZZRTL, an RTL fuzzer to automatically discover unknown bugs in CPU RTLs. DIFUZZRTL develops a register-coverage guided fuzzing technique, which efficiently yet correctly identifies a state transition in the finite state machine of RTL designs. DIFUZZRTL also develops several new techniques in consideration of unique RTL design characteristics, including cycle-sensitive register coverage guiding, asynchronous interrupt events handling, a unified CPU input format with Tilelink protocols, and drop-in-replacement designs to support various CPU RTLs. We implemented DIFUZZRTL, and performed the evaluation with three real-world open source CPU RTLs: OpenRISC Mor1kx Cappuccino, RISC-V Rocket Core, and RISC-V Boom Core. During the evaluation, DIFUZZRTL identified 16 new bugs from these CPU RTLs, all of which were confirmed by the respective development communities and vendors. Six of those are assigned with CVE numbers, and to the best of our knowledge, we reported the first and the only CVE of RISC-V cores, demonstrating its strong practical impacts to the security community.},
+  isbn = {978-1-72818-934-5},
+  langid = {english},
+  keywords = {archived},
+  annotation = {https://web.archive.org/web/20240607015116/https://www.computer.org/csdl/proceedings-article/sp/2021/893400b778/1t0x9G4Q5MI},
+  file = {/Users/u/Zotero/storage/JAVVFZXH/Hur et al. - 2021 - DifuzzRTL Differential Fuzz Testing to Find CPU B.pdf}
+}
+
 @misc{jagantekiIntroductionRISCVBoot2019,
   title = {An {{Introduction}} to {{RISC-V Boot}} Flow: {{Overview}}, {{Blob}} vs {{Blobfree}} Standards},
   author = {{Jagan Teki}},
@@ -221,6 +308,22 @@
   keywords = {archived},
   annotation = {https://web.archive.org/web/20240301064557/https://crvf2019.github.io/pdf/43.pdf},
   file = {/Users/u/Zotero/storage/TGYB4RIM/43.pdf}
+}
+
+@inproceedings{laeuferRFUZZCoverageDirectedFuzz2018,
+  title = {{{RFUZZ}}: {{Coverage-Directed Fuzz Testing}} of {{RTL}} on {{FPGAs}}},
+  shorttitle = {{{RFUZZ}}},
+  booktitle = {2018 {{IEEE}}/{{ACM International Conference}} on {{Computer-Aided Design}} ({{ICCAD}})},
+  author = {Laeufer, Kevin and Koenig, Jack and Kim, Donggyu and Bachrach, Jonathan and Sen, Koushik},
+  year = {2018},
+  month = nov,
+  pages = {1--8},
+  issn = {1558-2434; https://web.archive.org/web/20240607034936/https://ieeexplore.ieee.org/document/8587711},
+  doi = {10.1145/3240765.3240842},
+  urldate = {2024-06-07},
+  abstract = {Dynamic verification is widely used to increase confidence in the correctness of RTL circuits during the pre-silicon design phase. Despite numerous attempts over the last decades to automate the stimuli generation based on coverage feedback, Coverage Directed Test Generation (CDG) has not found the widespread adoption that one would expect. Based on new ideas from the software testing community around coverage-guided mutational fuzz testing, we propose a new approach to the CDG problem which requires minimal setup and takes advantage of FPGA-accelerated simulation for rapid testing. We provide test input and coverage definitions that allow fuzz testing to be applied to RTL circuit verification. In addition we propose and implement a series of transformation passes that make it feasible to reset arbitrary RTL designs quickly, a requirement for deterministic test execution. Alongside this paper we provide rfuzz, a fully featured implementation of our testing methodology which we make available as open-source software to the research community. An empirical evaluation of RFUZZ shows promising results on archiving coverage for a wide range of different RTL designs ranging from communication IPs to an industry scale 64-bit CPU.},
+  keywords = {archived},
+  file = {/Users/u/Zotero/storage/P63L4T4G/Laeufer et al. - 2018 - RFUZZ Coverage-Directed Fuzz Testing of RTL on FP.pdf}
 }
 
 @misc{LearnRiscVAssembly,
@@ -591,6 +694,16 @@
   howpublished = {https://hackerboards.com/?cpu\_architecture=RV64}
 }
 
+@inproceedings{soltCascadeCPUFuzzing2024,
+  title = {Cascade: {{CPU Fuzzing}} via {{Intricate Program Generation}}},
+  booktitle = {{{USENIX Security}} 2024},
+  author = {Solt, Flavien and {Ceesay-Seitz}, Katharina and Razavi, Kaveh},
+  year = {2024},
+  abstract = {Generating interesting test cases for CPU fuzzing is akin to generating programs that exercise unusual states inside the CPU. The performance of CPU fuzzing is heavily influenced by the quality of these programs and by the overhead of bug detection. Our analysis of existing state-of-the-art CPU fuzzers shows that they generate programs that are either overly simple or execute a small fraction of their instructions due to invalid control flows. Combined with expensive instruction-granular bug detection mechanisms, this leads to inefficient fuzzing campaigns. We present Cascade, a new approach for generating valid RISC-V programs of arbitrary length with highly randomized and interdependent control and data flows. Cascade relies on a new technique called asymmetric ISA pre-simulation for entangling control flows with data flows when generating programs. This entanglement results in non-termination when a program triggers a bug in the target CPU, enabling Cascade to detect a CPU bug at program granularity without introducing any runtime overhead. Our evaluation shows that long Cascade programs are more effective in exercising the CPU's internal design. Cascade achieves 28.2x to 97x more coverage than the state-of-the-art CPU fuzzers and uncovers 37 new bugs (28 new CVEs) in 5 RISC-V CPUs with varying degrees of complexity. The programs that trigger these bugs are long and intricate, impeding triaging. To address this challenge, Cascade features an automated pruning method that reduces a program to a minimal number of instructions that trigger the bug.},
+  langid = {english},
+  file = {/Users/u/Zotero/storage/MRUGKJ33/Solt et al. - Cascade CPU Fuzzing via Intricate Program Generat.pdf}
+}
+
 @article{soltCascadeCPUFuzzinga,
   title = {Cascade: {{CPU Fuzzing}} via {{Intricate Program Generation}}},
   author = {Solt, Flavien and {Ceesay-Seitz}, Katharina and Razavi, Kaveh},
@@ -606,6 +719,18 @@
   keywords = {archived},
   annotation = {https://web.archive.org/web/20240522065734/https://riscv.org/technical/specifications/},
   file = {/Users/u/Zotero/storage/6P7GE9ZT/specifications.html}
+}
+
+@inproceedings{trippelFuzzingHardwareSoftware2022,
+  title = {Fuzzing {{Hardware Like Software}}},
+  booktitle = {{{USENIX Security}} 2022},
+  author = {Trippel, Timothy and Shin, Kang G. and Chernyakhovsky, Alex and Kelly, Garret and Rizzo, Dominic and Hicks, Matthew},
+  year = {2022},
+  pages = {3237--3254},
+  urldate = {2024-06-03},
+  isbn = {978-1-939133-31-1},
+  langid = {english},
+  file = {/Users/u/Zotero/storage/QL58MDDY/Trippel et al. - 2022 - Fuzzing Hardware Like Software.pdf}
 }
 
 @misc{UnderstandingAssemblyPart,
@@ -638,21 +763,4 @@
   keywords = {archived},
   annotation = {https://web.archive.org/web/20240406052812/https://chipyard.readthedocs.io/en/stable/},
   file = {/Users/u/Zotero/storage/G7YTCASP/stable.html}
-}
-
-@inproceedings{wichelmannMAMBODynamicSideChannel2023,
-  title = {{{MAMBO}}--{{V}}: {{Dynamic Side-Channel Leakage Analysis}} on~{{RISC}}--{{V}}},
-  shorttitle = {{{MAMBO}}--{{V}}},
-  booktitle = {Detection of {{Intrusions}} and {{Malware}}, and {{Vulnerability Assessment}}},
-  author = {Wichelmann, Jan and Peredy, Christopher and Sieck, Florian and P{\"a}tschke, Anna and Eisenbarth, Thomas},
-  editor = {Gruss, Daniel and Maggi, Federico and Fischer, Mathias and Carminati, Michele},
-  year = {2023},
-  pages = {3--23},
-  publisher = {Springer Nature Switzerland},
-  address = {Cham},
-  doi = {10.1007/978-3-031-35504-2_1},
-  abstract = {RISC--V is an emerging technology, with applications ranging from embedded devices to high-performance servers. Therefore, more and more security-critical workloads will be conducted with code that is compiled for RISC--V. Well-known microarchitectural side-channel attacks against established platforms like x86 apply to RISC--V CPUs as well. As RISC--V does not mandate any hardware-based side-channel countermeasures, a piece of code compiled for a generic RISC--V CPU in a cloud server cannot make safe assumptions about the microarchitecture on which it is running. Existing tools for aiding software-level precautions by checking side-channel vulnerabilities on source code or x86 binaries are not compatible with RISC--V machine code.},
-  isbn = {978-3-031-35504-2},
-  langid = {english},
-  file = {/Users/u/Zotero/storage/5IC2QLN7/Wichelmann et al. - 2023 - MAMBO–V Dynamic Side-Channel Leakage Analysis on .pdf}
 }
