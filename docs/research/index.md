@@ -1,7 +1,6 @@
 ---
 hide:
   - navigation
-  - toc
 ---
 # Research
 
@@ -13,14 +12,14 @@ hide:
 | [PicoRV32](https://github.com/YosysHQ/picorv32)                                   | 🟢 (6 CVEs)                                                                 |                                                                  |                                                                  |                                                               |                                                                   |
 | [Kronos](https://github.com/SonalPinto/kronos/tree/master/rtl/core)               | 🟢 (6 CVEs)                                                                 |                                                                  |                                                                  |                                                               |                                                                   |
 | [CVA6](https://github.com/openhwgroup/cva6)                                       | 🟢 (8 CVEs)                                                                 |                                                                  |                                                                  |                                                               |                                                                   |
-| [BOOM](https://github.com/riscv-boom/riscv-boom)                                  | 🟢 (2 CVEs)                                                                 | 🟢                                                               |                                                                  | 🟢                                                            |                                                                   |
+| [BOOM](https://github.com/riscv-boom/riscv-boom)                                  | 🟢 (2 CVEs)                                                                 | 🟢                                                               |                                                                  | 🟢 (2 CVEs)                                                   |                                                                   |
 | [Rocket](https://github.com/chipsalliance/rocket-chip)                            |                                                                             | 🟢                                                               |                                                                  | 🟢                                                            | 🟢                                                                |
-| [mor1kx](https://github.com/openrisc/mor1kx)                                      |                                                                             |                                                                  |                                                                  | 🟢                                                            |                                                                   |
+| [mor1kx](https://github.com/openrisc/mor1kx)                                      |                                                                             |                                                                  |                                                                  | 🟢 (3 CVEs)                                                   |                                                                   |
 | [BlackParrot](https://github.com/black-parrot/black-parrot)                       |                                                                             | 🟢                                                               |                                                                  |                                                               |                                                                   |
 | [Sodor](https://github.com/ucb-bar/riscv-sodor)                                   |                                                                             |                                                                  |                                                                  |                                                               | 🟢                                                                |
 | [OpenTitan](https://github.com/googleinterns/hw-fuzzing/tree/master/hw/opentitan) |                                                                             |                                                                  | 🟢                                                               |                                                               |                                                                   |
 
-From a security standpoint, what makes RISC-V interesting is that the hardware definition of some IP cores is open source, which means that it can be formally verified and, best of all, fuzzed like software. The idea is simple:
+From a security standpoint, what makes RISC-V interesting is that the hardware definition of some IP cores is open source, which means that it can be formally verified and, best of all, fuzzed. Like software! The idea is "simple":
 
 - compile the core into an executable format,
 - shovel it into a simulator,
@@ -30,10 +29,10 @@ From a security standpoint, what makes RISC-V interesting is that the hardware d
 - repeat,
 - ...wait, what now?
 
-The design and implementation of such a fuzzer are quite challenging, tho, mainly because, unlike with a traditional program, it's difficult to define an oracle that tells us when a bug in a CPU has been found, because the CPU just...interprets instructions based on state and data. It can't "crash". And if we observe a crash, most likely it's the simulator crashing. We don't yet have a precise way to tell whether the CPU being simulated and fuzzed is behaving according to the specs, or maybe according to the best golden model we have so far. Even in this case, is the golden model representative? What are we trying to compare against? We don't (yet!) have the choice of memory or address sanitizers like we have for fuzzers. In other words, there's a huge body of research, development, and hacking waiting to be unfolded here. There exist the notion of coverage, which is good news.
+The design and implementation of such a fuzzer are quite challenging, mainly because, unlike with a traditional software program, it's difficult to define an oracle that tells us when a bug in a CPU design has been found, because a CPU just...interprets instructions based on state and data. It can't "crash". And if we observe a crash, most likely it's the simulator crashing. We don't yet have a precise way to tell whether the CPU being simulated and fuzzed is behaving according to the specs, or maybe according to the best golden model we have so far. Even in this case, is the golden model representative? What are we trying to compare against? We don't (yet!) have the choice of memory or address sanitizers like we have for fuzzers. In other words, there's a huge body of research, development, and hacking waiting to be unfolded. There exist the notion of coverage, which is good news.
+## Papers with Tools
 
 I selected the following papers because (1) the evaluation is done on RISC-V cores or a full processor, and (2) they come with code, so the results are reproducible. In some cases, they're used to continuously fuzz the RTL of the cores, like in the case of the work by Trippel et al., which, according to the authors (and [this repository](https://github.com/googleinterns/hw-fuzzing)), their tool is used to fuzz Google's [OpenTitan](https://opentitan.org/).
-## Papers with Tools
 
 - Solt et al., [Cascade: CPU Fuzzing via Intricate Program Generation](https://comsec.ethz.ch/research/hardware-design-security/cascade-cpu-fuzzing-via-intricate-program-generation/), USENIX Security, 2024.
 	- **Tool:** [Cascade](https://github.com/cascade-artifacts-designs/cascade-meta) (Docker)
@@ -64,3 +63,8 @@ I selected the following papers because (1) the evaluation is done on RISC-V cor
 	- **Target RISC-V:**
 		- [Rocket](https://github.com/chipsalliance/rocket-chip) (Verilog)
 		- [Sodor](https://github.com/ucb-bar/riscv-sodor) (Chisel)
+## Known Vulnerabilities in RISC-V Designs
+
+{{ read_csv('cves.csv') }}
+
+Download: [`cves.csv`](cves.csv)
